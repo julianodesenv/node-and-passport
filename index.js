@@ -31,6 +31,6 @@ require('./src/index')(app, passport)
 
 mongoose.connect('mongodb://localhost:27017/auth', { useNewUrlParser: true })
 mongoose.Promise = global.Promise
-app.listen(9001, () => {
+app.listen(9000, () => {
     console.log('Express has been started');
 })

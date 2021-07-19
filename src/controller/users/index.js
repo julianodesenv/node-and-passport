@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const isAuth = require('./../../auth/middleware')
+const isAuth = require('./../auth/middleware')
 
 module.exports = (passport) => {
     router.get('/', isAuth, require('./all'))
